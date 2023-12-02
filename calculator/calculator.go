@@ -68,8 +68,8 @@ func NewCalculator(input string) *Calculator {
 	calculator := &Calculator{Input: input}
 	err := calculator.ParseInput()
 	if err != nil {
+		fmt.Println(err)
 		return nil
-
 	}
 
 	return calculator
